@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/tv_title"
+        android:text="实施类项目编号变更申请基本信息展示" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/businessdepartmentspecialistexamin"
+            android:orientation="vertical"
+            style="@style/tb_div" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="申请人姓名" />
+
+                <EditText
+                    style="@style/tr_et_content"
+                    android:hint="孙跃" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="申请人岗位" />
+
+                <EditText
+                    android:id="@+id/appdept"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="合同签署地" />
+
+                <EditText
+                    android:id="@+id/signplace"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="合同类型" />
+
+                <EditText
+                    android:id="@+id/contracttype"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="一级审批人" />
+
+                <EditText
+                    android:id="@+id/firstexamine"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="二级审批人" />
+
+                <EditText
+                    android:id="@+id/secondexamine"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="三级审批人" />
+
+                <EditText
+                    android:id="@+id/thirdexamine"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="主项目名称" />
+
+                <EditText
+                    android:id="@+id/mainproname"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="主项目编号" />
+
+                <EditText
+                    android:id="@+id/mainpronum"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="是否拆订单" />
+
+                <EditText
+                    android:id="@+id/issplitorder"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="合同名称" />
+
+                <EditText
+                    android:id="@+id/contactname"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="项目经理姓名" />
+
+                <EditText
+                    android:id="@+id/projectname"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="正式实施时间" />
+
+                <EditText
+                    android:id="@+id/startdate"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="预计完成时间" />
+
+                <EditText
+                    android:id="@+id/enddate"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="预计关闭时间" />
+
+                <EditText
+                    android:id="@+id/closedate"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="销售类型" />
+
+                <EditText
+                    android:id="@+id/markettype"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="项目来源" />
+
+                <EditText
+                    android:id="@+id/projectsource"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="业务细分类" />
+
+                <EditText
+                    android:id="@+id/businesssplit"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="项目类型" />
+
+                <EditText
+                    android:id="@+id/projecttype"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="预计合同额" />
+
+                <EditText
+                    android:id="@+id/conamount"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="（总）料" />
+
+                <EditText
+                    android:id="@+id/totalsource"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="（总）工" />
+
+                <EditText
+                    android:id="@+id/totaltime"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="(总)费" />
+
+                <EditText
+                    android:id="@+id/totalcost"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="成本预算合计" />
+
+                <EditText
+                    android:id="@+id/costestimate"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="项目简要说明" />
+
+                <EditText
+                    android:id="@+id/briefintroduction"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="附件上传" />
+
+                <EditText
+                    android:id="@+id/attachment"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    style="@style/tr_tv_content"
+                    android:text="变更内容说明" />
+
+                <EditText
+                    android:id="@+id/changeexplain"
+                    style="@style/tr_et_content" />
+            </TableRow>
+            <ImageView
+                    android:id="@+id/fromlist_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/extra"
+                    android:layout_marginTop="10dip"
+                    android:background="@null"
+                    android:src="@drawable/fromlist_line" />
+            <TableRow style="@style/tr_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审批意见"
+                    android:textColor="#003399"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="85px"
+                    android:background="@drawable/background_login_div_bg"
+                    android:enabled="false"
+                    android:hint="暂无审批人审批"
+                    android:inputType="text"
+                    android:paddingLeft="10dip"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="历史相关被驳回申请"
+                    android:textColor="#003399"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow style="@style/tr_content" >
+
+                <EditText
+                    android:id="@+id/historyinput_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80px"
+                    android:background="@drawable/background_login_div_bg"
+                    android:enabled="false"
+                    android:hint="无相关历史驳回申请单"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以下是最近一次申请时的“项目编号”、“成本中心”、“公司代码”" />
+
+            <TableRow
+                style="@style/tr_content" >
+
+                <TextView
+                     style="@style/tr_tv_content"
+                    android:text="项目编号" />
+
+                <EditText
+                    android:id="@+id/projectnum"
+                    style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow
+                style="@style/tr_content" >
+
+                <TextView
+                     style="@style/tr_tv_content"
+                    android:text="成本中心" />
+
+                <EditText
+                    android:id="@+id/costcenter"
+                   style="@style/tr_et_content"/>
+            </TableRow>
+
+            <TableRow
+               style="@style/tr_content" >
+
+                <TextView
+                     style="@style/tr_tv_content"
+                    android:text="公司代码" />
+
+                <EditText
+                    android:id="@+id/companynum"
+                   style="@style/tr_et_content" />
+            </TableRow>
+
+            <TableRow
+                    android:id="@+id/ownsuggest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/historyinput"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/owninput_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/edittext_style_01"
+                        android:hint="请填写您的意见"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="#003399"
+                        android:textSize="24px" />
+                </TableRow>
+
+             <TableRow
+                    android:id="@+id/agreeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ownsuggest"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center" >
+
+                    <!-- 同意button -->
+
+                    <Button
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/big_btn_bg"
+                        android:text="同    意"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/big_btn_bg"
+                        android:text="不同意"
+                        android:textColor="#ffffff" />
+                </TableRow>
+           
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

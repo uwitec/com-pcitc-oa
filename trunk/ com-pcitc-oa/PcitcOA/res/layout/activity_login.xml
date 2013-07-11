@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:src="@drawable/photo1"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:text="账号"
+        android:textColor="#000000"
+        android:textSize="16dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:text="密码"
+        android:textColor="#000000"
+        android:textSize="16dip"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="243dp"
+        android:background="@drawable/regist_weibo_s"
+        android:divider="@drawable/divider_horizontal_timeline"
+        android:dividerHeight="2.0dip"
+        android:text="登陆"
+        android:textColor="#000000"
+        android:textSize="36px"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/loginButton"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="55dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/txtPwd"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="55dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="用户名"
+        android:singleLine="true"
+        android:textColor="#003399"
+        android:textSize="36px" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/ib_log_select"
+        android:layout_width="29dip"
+        android:layout_height="17dip"
+        android:layout_above="@id/txtPwd"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/txtUser"
+        android:background="@null"
+        android:src="@drawable/login_select_ico" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="40dp"
+            android:text="记住我"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <CheckBox
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@drawable/forleace_radiobutton" />
+    </LinearLayout>
+
+</RelativeLayout>

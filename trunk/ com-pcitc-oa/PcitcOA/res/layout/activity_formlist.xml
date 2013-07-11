@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/public_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/tv_title"
+            android:text="实施类项目启动申请单" />
+
+        <!--
+       padding 内边距   layout_margin 外边距  
+        android:layout_alignParentTop 布局的位置是否处于顶部
+        -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/login_div"
+                style="@style/tb_div" >
+
+                <!-- 账号 -->
+
+                <TableRow
+                    android:id="@+id/account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="申请人姓名" />
+
+                    <EditText
+                        android:id="@+id/login_edit_username"
+                        style="@style/tr_et_content"
+                        android:hint="孙跃" />
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/red"
+                    android:id="@+id/password"
+                    style="@style/tr_content"
+                    android:layout_below="@id/account" >
+
+                    <!-- 密码text -->
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="申请人部门" />
+
+                    <EditText
+                        android:id="@+id/login_edit_password"
+                        style="@style/tr_et_content"
+                        android:hint="系统事业部" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/projectsource"
+                    style="@style/tr_content"
+                    android:layout_below="@id/password" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="项目来源" />
+
+                    <EditText
+                        android:id="@+id/pro_source_name"
+                        style="@style/tr_et_content"
+                        android:hint="中石化企业" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/customname"
+                    style="@style/tr_content"
+                    android:layout_below="@id/projectsource" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="顾客名称" />
+
+                    <EditText
+                        android:id="@+id/customer_name"
+                        style="@style/tr_et_content"
+                        android:hint="顾客名称" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/proname"
+                    style="@style/tr_content"
+                    android:layout_below="@id/customname" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="项目名称" />
+
+                    <EditText
+                        android:id="@+id/pro_name"
+                        style="@style/tr_et_content"
+                        android:hint="项目名称" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/sign"
+                    style="@style/tr_content"
+                    android:layout_below="@id/proname" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="合同签署地" />
+
+                    <EditText
+                        android:id="@+id/sign_name"
+                        style="@style/tr_et_content"
+                        android:hint="北京" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/maincontent"
+                    style="@style/tr_content"
+                    android:layout_below="@id/sign" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="项目主要内容" />
+
+                    <EditText
+                        android:id="@+id/maincontent_name"
+                        style="@style/tr_et_content"
+                        android:hint="项目主要内容" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/startdate"
+                    style="@style/tr_content"
+                    android:layout_below="@id/maincontent" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="预计启动日期" />
+
+                    <EditText
+                        android:id="@+id/pro_date"
+                        style="@style/tr_et_content"
+                        android:hint="05/09/13" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/enddate"
+                    style="@style/tr_content"
+                    android:layout_below="@id/startdate" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="项目结束日期" />
+
+                    <EditText
+                        android:id="@+id/enddate_name"
+                        style="@style/tr_et_content"
+                        android:hint="06/09/13" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/estimateprice"
+                    style="@style/tr_content"
+                    android:layout_below="@id/enddate" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="预计合同额" />
+
+                    <EditText
+                        android:id="@+id/estprice_name"
+                        style="@style/tr_et_content"
+                        android:hint="100万" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/totalprice"
+                    style="@style/tr_content"
+                    android:layout_below="@id/estimateprice" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="预计总成本" />
+
+                    <EditText
+                        android:id="@+id/totalprice_name"
+                        style="@style/tr_et_content"
+                        android:hint="100万" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/resourceneed"
+                    style="@style/tr_content"
+                    android:layout_below="@id/totalprice" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="资源需求" />
+
+                    <EditText
+                        android:id="@+id/resneed_name"
+                        style="@style/tr_et_content"
+                        android:hint="资源需求" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/before"
+                    style="@style/tr_content"
+                    android:layout_below="@id/resourceneed" >
+
+                    <TextView
+                        android:layout_width="240px"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="是否有售前项目"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45px"
+                            android:button="@drawable/forleace_radiobutton"
+                            android:checked="true"
+                            android:text="是"
+                            android:textColor="#000000"
+                            android:textSize="24px" >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radiono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45px"
+                            android:layout_marginLeft="20px"
+                            android:button="@drawable/forleace_radiobutton"
+                            android:checked="false"
+                            android:text="否"
+                            android:textColor="#000000"
+                            android:textSize="24px" >
+                        </RadioButton>
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/dangeralysis"
+                    style="@style/tr_content"
+                    android:layout_below="@id/before" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="风险分析" />
+
+                    <EditText
+                        android:id="@+id/dangeraly_name"
+                        style="@style/tr_et_content"
+                        android:hint="分析分析" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/suggestmanager"
+                    style="@style/tr_content"
+                    android:layout_below="@id/dangeralysis" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="建议项目经理" />
+
+                    <EditText
+                        android:id="@+id/suggestmanager_name"
+                        style="@style/tr_et_content"
+                        android:hint="" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/demo"
+                    style="@style/tr_content"
+                    android:layout_below="@id/suggestmanager" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="备注" />
+
+                    <EditText
+                        android:id="@+id/demo_name"
+                        style="@style/tr_et_content"
+                        android:hint="备注" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/extra"
+                    style="@style/tr_content"
+                    android:layout_below="@id/demo" >
+
+                    <TextView
+                        style="@style/tr_tv_content"
+                        android:text="附件上传" />
+
+                    <EditText
+                        android:id="@+id/extra_name"
+                        style="@style/tr_et_content"
+                        android:hint="无" />
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/fromlist_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/extra"
+                    android:layout_marginTop="10dip"
+                    android:background="@null"
+                    android:src="@drawable/fromlist_line" />
+
+                <TableRow
+                    android:id="@+id/suggest"
+                    style="@style/tr_content"
+                    android:layout_below="@id/fromlist_line" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批意见"
+                        android:textColor="#003399"
+                        android:textSize="30px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/suggest"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="85px"
+                        android:background="@drawable/background_login_div_bg"
+                        android:enabled="false"
+                        android:hint="暂无审批人审批"
+                        android:inputType="text"
+                        android:paddingLeft="10dip"
+                        android:textColor="#666666"
+                        android:textSize="24px" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/history"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/input"
+                    android:layout_marginTop="30px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="历史相关被驳回申请"
+                        android:textColor="#003399"
+                        android:textSize="30px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/historyinput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/history"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/historyinput_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80px"
+                        android:background="@drawable/background_login_div_bg"
+                        android:enabled="false"
+                        android:hint="无相关历史驳回申请单"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="#666666"
+                        android:textSize="24px" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/ownsuggest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/historyinput"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/owninput_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/edittext_style_01"
+                        android:hint="请填写您的意见"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="#003399"
+                        android:textSize="24px" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/agreeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ownsuggest"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center" >
+
+                    <!-- 同意button -->
+
+                    <Button
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/big_btn_bg"
+                        android:text="同    意"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/big_btn_bg"
+                        android:text="不同意"
+                        android:textColor="#ffffff" />
+                </TableRow>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

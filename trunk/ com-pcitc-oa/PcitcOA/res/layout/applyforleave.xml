@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/public_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="请假申请基本信息展示"
+            android:textColor="#1d238a"
+            android:textSize="30px" />
+
+        <!--padding 内边距   layout_margin 外边距   android:layout_alignParentTop 布局的位置是否处于顶部 -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/login_div"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120px"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/background_login_div_bg"
+                android:padding="20px" >
+
+                <!-- 账号 -->
+
+                <TableRow
+                    android:id="@+id/account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="申请人"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/login_edit_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="孙跃"
+                        android:inputType="text"
+                        android:textColor="#003399"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/account"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <!-- 密码text -->
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="部门"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/login_edit_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="系统事业部"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/projectsource"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/password"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="职工编号"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/login_edit_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="122456"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/customname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/projectsource"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="入职日期"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/login_edit_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="2012-02-22"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/proname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customname"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="职位"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/pro_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="工程师"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/sign"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/proname"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="婚姻状况"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/sign_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="未婚"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/maincontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sign"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="假期类型"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/maincontent_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="年休假"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/startdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/maincontent"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="休假总天数"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/startdate_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="日历天数：4天"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+                <!--
+                <TableRow
+                    android:id="@+id/enddate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/startdate"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="备注信息"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/startdate_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="无"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+                -->
+
+                <TableRow
+                    android:id="@+id/estimateprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/startdate"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="指定负责人"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/startdate_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="无"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/totalprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/estimateprice"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="145px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="附件"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/startdate_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/edittext_style_02"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:hint="无"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/before"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalprice"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="240px"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="人力资源部复核及记录"
+                        android:textColor="#666666"
+                        android:textSize="24px"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radioyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45px"
+                            android:button="@drawable/forleace_radiobutton"
+                            android:checked="true"
+                            android:text="有薪"
+                            android:textColor="#000000"
+                            android:textSize="24px" >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radiono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45px"
+                            android:layout_marginLeft="20px"
+                            android:button="@drawable/forleace_radiobutton"
+                            android:checked="false"
+                            android:text="扣薪"
+                            android:textColor="#000000"
+                            android:textSize="24px" >
+                        </RadioButton>
+                    </RadioGroup>
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/fromlist_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/before"
+                    android:layout_marginTop="10dip"
+                    android:background="@null"
+                    android:src="@drawable/fromlist_line" />
+
+                <TableRow
+                    android:id="@+id/suggest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fromlist_line"
+                    android:layout_marginTop="20px"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批意见"
+                        android:textColor="#003399"
+                        android:textSize="30px"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/suggest"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="85px"
+                        android:background="@drawable/background_login_div_bg"
+                        android:enabled="false"
+                        android:hint="暂无审批人审批"
+                        android:inputType="text"
+                        android:paddingLeft="10dip"
+                        android:textColor="#666666"
+                        android:textSize="24px" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/ownsuggest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/input"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/owninput_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/edittext_style_01"
+                        android:hint="请填写您的意见"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="#003399"
+                        android:textSize="24px" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/agreeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ownsuggest"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <!-- 同意button -->
+
+                    <Button
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/big_btn_bg"
+                        android:text="同    意"
+                        android:textColor="#ffffff" />
+
+                    <!-- 不同意button -->
+
+                    <Button
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/big_btn_bg"
+                        android:text="不同意"
+                        android:textColor="#ffffff" />
+                </TableRow>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

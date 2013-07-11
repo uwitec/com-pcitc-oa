@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="vertical_layout">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/domo_toolbar_bg</item>
+    </style>
+
+    <style name="horizontal_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/filemanagermenubg_w</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="layout_fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="layout_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_fill_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_wrap_fill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <!-- 表单详情标题 -->
+    <style name="tv_title" parent="layout_fill_wrap">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tv_title_color</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <!-- 表单详情 -->
+    <style name="tb_div" parent="layout_fill_wrap">
+        <item name="android:layout_marginTop">15px</item>
+        <item name="android:layout_marginRight">75px</item>
+        <item name="android:layout_marginBottom">120px</item>
+        <item name="android:layout_marginLeft">75px</item>
+        <item name="android:background">@drawable/background_login_div_bg</item>
+        <item name="android:padding">20px</item>
+    </style>
+    <!-- 表单详情tableRow_tv -->
+    <style name="tr_tv_content">
+        <item name="android:layout_width">145px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/tr_tv_content</item>
+        <item name="android:textSize">24px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 表单详情tableRow_et -->
+    <style name="tr_et_content">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/tr_et_content</item>
+        <item name="android:textSize">24px</item>
+        <item name="android:layout_marginLeft">20px</item>
+        <item name="android:background">@drawable/edittext_style_02</item>
+        <item name="android:enabled">false</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 表单详情tableRow -->
+    <style name="tr_content" parent="layout_fill_wrap">
+        <item name="android:layout_marginTop">20px</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 主体显示区域 -->
+    <style name="body" parent="layout_fill">
+        <item name="android:orientation">vertical</item>
+        <item name="android:id">@id/view_mainBody</item>
+        <item name="android:background">#C0C0C0</item>
+    </style>
+
+    <!-- 标题框架样式 -->
+    <style name="title_bar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:id">@id/title_bar</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 标题剧中文本样式 -->
+    <style name="title_text" parent="layout_wrap_content">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">36px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- 标题左则Button样式 -->
+    <style name="title_left_but" parent="layout_wrap_content">
+        <item name="android:id">@id/templateButtonLeft</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <!-- 标题右则Button样式 -->
+    <style name="title_right_but" parent="layout_wrap_content">
+        <item name="android:id">@id/templateButtonRight</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <!-- Dialog样式 -->
+    <style name="super_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+    </style>
+
+    <!-- Dialog样式  （阴影） -->
+    <style name="dialog" parent="super_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+    </style>
+
+    <!-- Dialog样式  （无阴影） -->
+    <style name="dialog_windowFullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>
