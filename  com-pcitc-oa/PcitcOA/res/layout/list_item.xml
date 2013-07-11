@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   
+    <LinearLayout
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"   
+    android:background="@drawable/listview_click_bg"
+    
+      >
+        <View style="@style/vertical_layout"/>
+	<TextView 
+	  android:id="@+id/text1"    
+	  android:layout_width="96px"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textSize="18px"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="10dp"
+    android:singleLine="true"
+	/>
+	<View style="@style/vertical_layout"/>
+	<TextView 
+	  android:id="@+id/text2"    
+	  android:layout_width="96px"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+     android:textSize="18px"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="10dp"
+    android:singleLine="true"
+	/>
+	<View style="@style/vertical_layout"/>
+	<TextView 
+	  android:id="@+id/text3"    
+	  android:layout_width="350px"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+     android:textSize="18px"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="10dp"
+    android:singleLine="true"
+	/>
+	<View style="@style/vertical_layout"/>
+	<TextView 
+	  android:id="@+id/text4"    
+	  android:layout_width="96px"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+     android:textSize="18px"
+    android:gravity="center_vertical|center_horizontal"
+   
+    android:singleLine="true"
+	/>
+	<View style="@style/vertical_layout"/>
+	<TextView 
+	  android:id="@+id/text5"    
+	  android:layout_width="153px"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+     android:textSize="18px"
+    android:gravity="center_vertical|center_horizontal"
+   
+    android:singleLine="true"
+	/>
+    </LinearLayout>
+	<View style="@style/horizontal_layout"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_height">44dip</dimen>
+    <dimen name="side_bar_text">12.0sp</dimen>
+    <dimen name="side_dialog">85dip</dimen>
+</resources>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:background="@drawable/titile_bg"
+    android:layout_height="80px"
+     >
+
+    <Button
+        style="@style/title_left_but"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23px"
+        android:background="@drawable/back_bt" />
+
+    <RelativeLayout
+        android:id="@+id/title_bar_center"
+        style="@style/layout_fill" >
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/title_text"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name" />
+    </RelativeLayout>
+
+    <Button
+        style="@style/title_right_but"
+        android:layout_centerVertical="true"
+        android:background="@null" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="view_mainBody" type="id">false</item>
+    <item name="view_progress" type="id">false</item>
+    <item name="title_text" type="id">false</item> <!-- 标题 -->
+    <item name="templateButtonLeft" type="id">false</item> <!-- 标题左则Button -->
+    <item name="templateButtonRight" type="id">false</item> <!-- 标题右则Button -->
+    <item name="title_image_left" type="id">false</item>
+  
+    <item name="date_id" type="id">false</item>
+    <item name="side_bar" type="id">false</item>
+    <item name="lv_index_bar" type="id">false</item>
+    <item name="title_bar" type="id">false</item>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/meeting_book_base"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/meeting_book_select_date" />
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="40dp"
+        android:text="取消预定"
+        android:textColor="@color/blue"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="40dp"
+            android:text="操作帮助"
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

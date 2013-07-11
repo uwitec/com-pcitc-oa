@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_fill"
+    android:background="#dbdee3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar_gone"
+        style="@style/title_bar" >
+
+        <include
+            android:id="@+id/app_header"
+            layout="@layout/iframe_title" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/body" >
+    </LinearLayout>
+
+</LinearLayout>
